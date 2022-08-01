@@ -11,3 +11,10 @@ metadata:
     labels:
       fruit: apple
       color: red
+    Volumes:
+      emptyDir: {} 
+      claimName: myvol
+     containers:
+        name: nodejs
+        image: hub.docker.io/nodejs:0.4
+        ImagePullPolicy: IfNotPresent

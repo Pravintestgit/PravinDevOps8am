@@ -6,3 +6,15 @@ metadata:
   labels:
     fruit: apple
     color: red
+   templetes:
+    name: nodejs:0.4
+    labels:
+      fruit: apple
+      color: red
+    Volumes:
+      emptyDir: {} 
+      claimName: myvol
+     containers:
+        name: nodejs
+        image: hub.docker.io/nodejs:0.4
+        ImagePullPolicy: IfNotPresent

@@ -6,3 +6,8 @@ metadata:
   labels:
     fruit: apple
     color: red
+   templetes:
+    name: nodejs:0.4
+    labels:
+      fruit: apple
+      color: red
